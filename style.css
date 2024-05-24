@@ -1,0 +1,124 @@
+:root{
+    --bgColor : linear-gradient(45deg,#d6b,#fee);
+    --headerColor : linear-gradient(5deg,#f37,#f89);
+    --navColor : linear-gradient(3deg,#a92,#ff4);
+    --containerColor : linear-gradient(5deg,#4133,#6353);
+}
+html{
+    height: 100%;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    /* font-family: Comic Sans MS; */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background: var(--bgColor);
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+p{
+    font-family:'Segoe UI';
+    margin: 20px;
+    padding: 40px 10px;
+}
+header {
+    background: var(--headerColor);
+    color: #fff;
+    padding: 20px;
+    /* width: fit-content;
+    border-radius: 10px;
+    margin: 15px 0 15px 5%; */
+    text-align: left;
+    font-size: 24px;
+}
+nav {
+    background:var(--navColor);
+    /* width: fit-content;
+    border-radius: 10px; */
+    padding: 10px;
+    text-align: left;
+}
+nav a {
+    color: #fff;
+    margin: 10px 10px 10px 5%;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+nav a:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
+
+.mainDivide{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.galleryHeader{
+    background: #0000;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    width:fit-content;
+    color: #555;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+    background: var(--containerColor);
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    grid-auto-rows: minmax(100px, 300px);
+}
+.gallery-item {
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.gallery img {
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    max-height: 100%; /* Ensure image does not exceed the height of its container */
+    object-fit:cover; /* Ensure the whole image fits inside the div */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    z-index: 10;
+    transform: scale(1.2) ;
+    border-color: #777;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+li{
+    list-style-type:none;
+    color: #fff;
+    background: var(--navColor);
+    width: fit-content;
+    display: inline-flex;
+    padding: 10px;
+    margin: 5px;
+    border-radius:5px;
+
+}
