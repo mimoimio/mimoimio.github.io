@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 :root{
-    --bgColor : linear-gradient(45deg,#d6b,#fee);
+    --bgColor : linear-gradient(45deg,#523,#734);
     --headerColor : linear-gradient(5deg,#f37,#f89);
     --navColor : linear-gradient(3deg,#a92,#ff4);
     --containerColor : linear-gradient(5deg,#4133,#6353);
@@ -8,16 +9,17 @@ html{
     height: 100%;
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     height: 100%;
-    /* font-family: Comic Sans MS; */
-    font-weight: bold;
+    font-family: Roboto Mono;
+    font-weight: 300;
     margin: 0;
     padding: 0;
+    color: #fff;
     background: var(--bgColor);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-
 }
 p{
     font-family:'Segoe UI';
@@ -43,16 +45,14 @@ nav {
 }
 nav a {
     color: #fff;
-    margin: 10px 10px 10px 5%;
     border-radius: 10px;
     text-decoration: none;
     padding: 5px 10px;
     margin: 0 10px;
-    transition: transform 0.3s ease;
+    transition: color 0.3s ease;
 }
 nav a:hover {
-    transform: scale(1.1);
-    background-color: #555;
+    color: #ff8000;
 }
 
 .mainDivide{
@@ -120,5 +120,4 @@ li{
     padding: 10px;
     margin: 5px;
     border-radius:5px;
-
 }
