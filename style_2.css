@@ -120,10 +120,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: fit-content;
     width: 100%;
     border-radius: 10px;
-    padding: 0 30px;
+    padding: 30px;
     border: 1px solid transparent;
     cursor: pointer;
     transition: all 0.3s ease;
