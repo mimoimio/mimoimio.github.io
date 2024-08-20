@@ -5,24 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
 <body class="flex flex-col justify-center w-full h-fit bg-slate-200 ">
-    <header class="flex justify-between bg-white px-16 py-4">
+
+    <header class="flex justify-between bg-slate-50 px-16 py-4">
         <h1 class="text-2xl">Mimoimior</h1>
         <div class="flex gap-16">
-            <div><a href="" class="px-4 rounded-full duration-150">Home</a></div>
-            <div><a href="" class="px-4 rounded-full duration-150">Know Me</a></div>
-            <div><a href="" class="px-4 rounded-full duration-150">Link Tree</a></div>
-            <div><a href="" class="px-4 rounded-full duration-150">Art Gallery</a></div>
-            <div><a href="" class="px-4 rounded-full duration-150">My Games</a></div>
+            <div><a href="index.html" class="px-4 rounded-full duration-150">Home</a></div>
+            <div><a href="#knowme" class="px-4 rounded-full duration-150">Know Me</a></div>
+            <div><a href="#links" class="px-4 rounded-full duration-150">Links</a></div>
+            <div><a href="#artgallery" class="px-4 rounded-full duration-150">Art Gallery</a></div>
+            <div><a href="#mygames" class="px-4 rounded-full duration-150">My Games</a></div>
             <div><a href="" class="px-4 rounded-full duration-150">Websites</a></div>
         </div>
         <div><a href="" class="px-4 rounded-full duration-150">Contact Me</a></div>
     </header>
-    <h1 class="text-slate-600">
-        Greetings human.
-    </h1>
+
+    <div class="flex flex-col p-16 items-center" id="hero">
+
+        <img src="Profile.png" height="600px" width="600px" class="rounded-full shadow-black shadow-lg mb-16 blur-md" />
+        <div class="text-4xl">Hello! I'm <span class="text-blue-600">Mior</span>!</div>
+        <div class="text-xl">Welcome to my website</div>
+    </div>
+
+    <div class="flex flex-col p-16 items-start gap-4 bg-slate-50 text-slate-600" id="knowme">
+        <div>
+            <div class="text-4xl">Get to Know Me</div>
+            <div class="text-lg text-slate-500">A passionate web, software and game developer</div>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="text-2xl m-4 text-wrap tracking-wide text-justify">
+                I am currently a second year student in a computer science degree.
+                As of 2024, it has been 5 years since I started my journey
+                and experience with web development, ever since
+                my secondary school. I have an interest in designing and creating websites. I also excels at documenting
+                my research, requirements and progress
+            </div>
+            <div class="text-2xl m-4 text-wrap tracking-wide text-justify">
+                In my spare time, I like to develop Roblox games. Roblox Studio is a great tool for me to enjoy
+                programming,
+                and developing. Illustrating is also one of my skill and passion, as I use it for the creativity in
+                designing and developing.
+            </div>
+            <div class="text-2xl m-4 text-wrap tracking-wide text-justify">
+                I aim to be a software engineer. Currently, I am still learning the essentials to achieve said goal. I
+                involve myself with an active community
+                that have the same interest as me. The community allows me to do frequent projects that are closely
+                related with my passion and goals. I also
+                do a lot of personal projects, such as websites and games
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col p-16 items-start" id="links">
+        <div>
+            <div class="text-4xl">Links</div>
+            <div class="text-lg text-slate-500">Where does it lead to?</div>
+        </div>
+        <div class="flex flex-wrap justify-center w-full">
+            <a class="flex items-start gap-6 hover:bg-slate-50 duration-75 hover:bg-opacity-35 hover:shadow-lg hover:-translate-y-4 m-4 p-10 w-[300px] h-[300px] bg-slate-50 rounded-lg"
+                href="https://www.youtube.com/@adibbida9861" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" class="scale-50" />
+            </a>
+            <a class="flex items-start gap-6 hover:bg-slate-50 duration-75 hover:bg-opacity-35 hover:shadow-lg hover:-translate-y-4 m-4 p-10 w-[300px] h-[300px] bg-slate-50 rounded-lg"
+                href="https://www.linkedin.com/in/adib-bida-4b312a296/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="scale-50" />
+            </a>
+            <a class="flex flex-col items-start gap-6 hover:bg-slate-50 duration-75 hover:bg-opacity-35 hover:shadow-lg hover:-translate-y-4 m-4 p-10 w-[300px] h-[300px] bg-slate-50 rounded-lg"
+                href="www.instagram.com/pakdibun_hidop/" target="_blank">
+                <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png"
+                    class="scale-50" />
+            </a>
+            <a class="flex flex-col items-start gap-6 hover:bg-slate-50 duration-75 hover:bg-opacity-35 hover:shadow-lg hover:-translate-y-4 m-4 p-10 w-[300px] h-[300px] bg-slate-50 rounded-lg"
+                href="https://www.instagram.com/mimoimior/" target="_blank">
+                <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png"
+                    class="scale-50" />
+                <div class="absolute self-center"> (art) </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-col p-16 items-start bg-slate-50 text-slate-600" id="artgallery">
+        <div>
+            <div class="text-4xl">Art Gallery</div>
+            <div class="text-lg text-slate-500">Where does it lead to?</div>
+        </div>
+    </div>
+    
+    <div class="flex flex-col p-16 items-start" id="mygames">
+        <div>
+            <div class="text-4xl">My Games</div>
+            <div class="text-lg text-slate-500">Where does it lead to?</div>
+        </div>
+    </div>
+    
+    <div class="flex flex-col p-16 items-start bg-slate-50 text-slate-600" id="websites">
+        <div>
+            <div class="text-4xl">Websites</div>
+            <div class="text-lg text-slate-500">Visit other related websites</div>
+        </div>
+    </div>
+    
+    <div class="flex flex-col p-16 pb-40 items-start" id="websites">
+        Footer
+    </div>
 </body>
 
 </html>
